@@ -1,0 +1,14 @@
+{
+  "name": "01-node-express-huggingface",
+  "version": "1.0.0",
+  "description": "Baseline LLM application using Node.js, Express, and Hugging Face Inference API without LangChain",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}

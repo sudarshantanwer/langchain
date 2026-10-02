@@ -1,0 +1,52 @@
+### 0. Health Check
+GET http://localhost:3002/api/health
+
+### 1. Topic 1: Models
+POST http://localhost:3002/api/model
+Content-Type: application/json
+
+{
+  "question": "What is LangChain?"
+}
+
+### 2. Topic 2: Message Handling (SystemMessage + HumanMessage -> AIMessage)
+POST http://localhost:3002/api/messages
+Content-Type: application/json
+
+{
+  "question": "Explain LangChain in simple terms"
+}
+
+### 3. Topic 3: Prompts (ChatPromptTemplate)
+POST http://localhost:3002/api/prompt
+Content-Type: application/json
+
+{
+  "role": "AI Architect",
+  "topic": "LangChain",
+  "audience": "beginner"
+}
+
+### 4. Topic 4: Structured Output (Schema-validated with Zod & StructuredOutputParser)
+POST http://localhost:3002/api/structured
+Content-Type: application/json
+
+{
+  "technology": "LangChain"
+}
+
+### 5. Topic 5: LCEL (prompt.pipe(model).pipe(parser))
+POST http://localhost:3002/api/lcel
+Content-Type: application/json
+
+{
+  "topic": "RAG"
+}
+
+### 6. Topic 6: Chains (Reusable RunnableSequence)
+POST http://localhost:3002/api/chain
+Content-Type: application/json
+
+{
+  "topic": "LangChain"
+}

@@ -1,0 +1,18 @@
+### Health Check
+GET http://localhost:3001/api/health
+
+### Direct Chat Endpoint (Explain an LLM)
+POST http://localhost:3001/api/chat
+Content-Type: application/json
+
+{
+  "message": "Explain what an LLM is in simple terms"
+}
+
+### Direct Chat Endpoint (Another Question)
+POST http://localhost:3001/api/chat
+Content-Type: application/json
+
+{
+  "message": "Why do developers need abstractions when building software?"
+}

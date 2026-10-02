@@ -1,0 +1,17 @@
+{
+  "name": "02-node-express-langchain",
+  "version": "1.0.0",
+  "description": "LangChain demonstration application using Node.js, Express, and Hugging Face free LLM",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.2.14",
+    "@langchain/openai": "^1.6.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
+  }
+}
